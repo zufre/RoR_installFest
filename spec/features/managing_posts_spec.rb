@@ -5,7 +5,7 @@ RSpec.feature 'Managing Posts', :type => :feature do
 
   scenario 'Guests cannot create posts' do
     visit root_path
-    click_link 'New Post'
+    click_button 'New Post'
 
     expect(page).to have_content 'Sign up | Login'
   end
